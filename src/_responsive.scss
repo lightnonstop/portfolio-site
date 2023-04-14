@@ -1,0 +1,89 @@
+@import 'global';
+@media screen and (max-width: 980px){
+    body{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+@media screen and (max-width: 725px){
+    .footer{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 840px){
+    header{
+        grid-template-columns: 1fr max-content;
+        grid-template-rows: repeat(2, 1fr);
+        & .col-one{
+            order: 3;
+            grid-column: 1 / span 2;
+            & ul{
+                gap: 2rem;
+                justify-content: space-between;
+                & li a{
+                    font-size: clamp(0.1em, 4vw, 1.5em);
+                }
+            }
+        }
+        & .col-two ul{
+            display: flex;
+        }
+    }
+
+}
+@media screen and (max-width: 660px){
+    section.intro{
+        .introduction{
+            align-items: center;
+            p{
+                text-align: center;
+            }
+        }
+        .introduction{
+            button{
+                position: absolute;
+                top: 74%;
+            }
+        }
+        padding-top: 4rem;
+        .ellipse{
+            top: 0%;
+            left: -4%;
+            position: relative;
+            .el{
+                width: 100%;
+                height: 100%;
+                background-color: $very-dark-blue;
+                border-radius: $border-radius-2;
+                z-index: 1;
+                .wrap-pic{
+                    position: absolute;
+                    right: 30%;
+                    top: -10%;
+                    width: 170px;
+                    height: 170px;
+                    background-image: $background-one;
+                    padding: 1px;
+                    border-width: 3px;
+                    border-radius: $border-radius-2;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: $border-radius-2;
+                        z-index: -1;
+                    }
+                    .ellipse-sm{
+                        position: absolute;
+                        width: 100px;
+                        height: 100px;
+                        background-image: $background-one;
+                        border-radius: $border-radius-2;
+                        top: 50%;
+                        right: -20%;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}

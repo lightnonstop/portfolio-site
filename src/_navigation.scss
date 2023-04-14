@@ -1,0 +1,30 @@
+h1{
+    font-weight: 500;
+    font-size: clamp(20px, 6.6vw, 30px);
+    color: #FFFFFF;
+}
+header{
+    display: grid;
+    grid-template-columns: 200px 3fr max-content;
+    align-items: center;
+    gap: 2rem;
+    & .col-one ul{
+        display: flex;
+        justify-content: center;
+        gap: 4.5rem;
+        align-items: center;
+    }
+    & .col-one ul li a{
+        color: $white; 
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    & .col-two ul{
+        display: flex;
+        gap: 2.5rem;
+        align-items: center;
+    }
+    & .col-two ul li a svg{
+        transform: scale(1.35);
+    }
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+$very-dark-blue: #0F1624;
+$background-one: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+$background-two: linear-gradient(321.62deg, #13ADC7 9.27%, #6978D1 59.96%, #945DD6 85.3%);
+$background-three: linear-gradient(326.6deg, #13ADC7 21.25%, #6978D1 58.73%, #945DD6 77.47%);
+$box-shadow-one: 0px 7px 30px rgba(19, 173, 199, 0.3);
+$box-shadow-neon: 0px 10px 30px rgba(0, 178, 255, 0.35);
+$border-radius-1: 60px;
+$border-radius-2: 200px;
+$border-radius-3: 25px;
+$border-radius-4: 83px;
+$white: #FFFFFF;
+$cold-grey: #929EB0;
+$pic-filter: drop-shadow(0px 20px 50px rgba(0, 178, 255, 0.25));
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: $very-dark-blue;
+    padding: 3rem 14rem;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+button{
+    cursor: pointer;
+    &:hover{
+        
+    }
+}
+h2{
+    font-size: 2.6rem;
+    line-height: 69px;
+    width: max-content;
+    color: $white;
+}
+h3{
+    font-size: 2.0rem;
+    margin: 1.5rem 0;
+    color: $white;
+}

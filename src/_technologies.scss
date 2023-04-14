@@ -1,0 +1,49 @@
+.tech{
+    h2{
+        max-width: 540px;
+        line-height: normal;
+        margin-bottom: 2rem;
+    }
+}
+.wrap-tech{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    margin: 4rem 0;
+}
+.rectangle{
+    padding: 1rem;
+    background-image: $background-one;
+    box-shadow: $box-shadow-one;
+    border-radius: $border-radius-4;
+    margin-bottom: 4.0rem;
+}
+.wrap-other-skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    .wrap-circle-skills{
+        flex-basis: 300px;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        .circle{
+            background-image: $background-three;
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            border: 1px solid;
+            border-radius: $border-radius-4;
+        }
+        .other-skills{
+            font-size: 2.0rem;
+            color: $white;
+        }
+    }
+}
+
+.overwrite-width{
+    width: calc(4vw * 20);
+}

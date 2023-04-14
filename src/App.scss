@@ -1,0 +1,16 @@
+@import 'global';
+.all-wrap{
+    position: relative;
+    .get-to-top-icon{
+        position: relative;
+        bottom: 7px;
+    }
+}
+
+@import 'navigation';
+@import 'intro';
+@import 'projects';
+@import 'technologies';
+@import 'about';
+@import 'footer';
+@import 'responsive';

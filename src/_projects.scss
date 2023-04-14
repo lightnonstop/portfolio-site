@@ -1,0 +1,70 @@
+section.projects{
+    padding-bottom: 3rem;
+    .wrap-projects{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        .outer{
+            background-image: $background-one;
+            padding: 2px;
+            border-radius: $border-radius-3;
+            overflow: hidden;
+            height: max-content;
+            .projects{
+                border-radius: $border-radius-3;
+                background-color: $very-dark-blue;
+                max-width: 300px;
+                display: flex;
+                padding: 2rem;                flex-direction: column;
+                color: $white;
+                text-align: center;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+                p{
+                    color: $cold-grey;
+                    height: 40px;
+                }
+                .btns{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 1.5rem;
+                    gap: 2rem;
+                    a{
+                        button{
+                            border-radius: $border-radius-1;
+                            border: none;
+                            padding: 7px 14px;
+                            color: $white;
+                        }
+                        &:first-child{
+                            button{
+                                background-image: $background-one;
+                            }
+                        }
+                        &:last-child{
+                            button{
+                                background-color: $very-dark-blue;
+                                border: 2px solid $white;
+                            }
+                            &:hover{
+                                button{
+                                    background-color: $white;
+                                    color: $very-dark-blue;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+.inner{
+    height: 100%;
+    border-radius: $border-radius-3;
+    height: 100%;
+}

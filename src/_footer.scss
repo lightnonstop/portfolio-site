@@ -1,0 +1,36 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 13rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    .feel-mail{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+        p{
+            background: linear-gradient(270deg, #13ADC7 0%, #13ADC7 66.67%, #945DD6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color:    transparent;
+            background-clip: text;
+            font-size: clamp(1.5rem, 2vw, 1.7rem);
+        }
+        a{
+            display: inline-block;
+            font-size: clamp(1.5rem, 2vw, 1.7rem);
+            color: $white;
+        }
+    }
+    nav{
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 2.3rem;
+            li a svg{
+                transform: scale(1.35);
+            }
+        }
+    }
+}
